@@ -20,3 +20,6 @@ curl -sL https://raw.githubusercontent.com/LuckStock/cdeploy/master/bitbucket-de
 
 To make changes to the code, take the appropriate source from `./src` folder,
 make changes and then run it through the [Generator](ttps://argbash.io/generate)
+
+> Continuous Development Batch script by Shota Megrelishvili 3/30/2017
+For LuckStock.com - Royalty-free Marketplace
