@@ -1,0 +1,25 @@
+# cdeploy
+
+## Continuous Development Batch script by Shota Megrelishvili 3/30/2017
+## For LuckStock.com - Royalty-free Marketplace
+
+This repository is used on server-side for deployment of the latest code by: 
+1. On [BitBucket] commit pipelines ((e.g. batch deployment on commit to master branch)
+2. Coming soon...
+
+### Usage
+
+The appropriate Shell script is pulled on server-side by [curl] with arguments passed, e.i.:
+```bash
+curl -sL https://raw.githubusercontent.com/LuckStock/cdeploy/master/bitbucket-deploy.sh | bash -s \
+ -- run -r $BITBUCKET_REPO_SLUG -o $BITBUCKET_REPO_OWNER -c $BITBUCKET_COMMIT
+ ```
+
+### Pipeline Examples
+
+[BitBucket] Pipeline example could be found in `./pipeline-examples` folder
+
+### Changes
+
+To make changes to the code, take the appropriate source from `./src` folder,
+make changes and then run it through the [Generator](ttps://argbash.io/generate)
